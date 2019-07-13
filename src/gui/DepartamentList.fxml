@@ -9,32 +9,31 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartamentListController">
    <children>
-      <Label prefHeight="33.0" prefWidth="393.0" text="Departament Registration">
+      <Label text="Departament Registration">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <padding>
-            <Insets left="5.0" top="5.0" />
+            <Insets left="5.0" top="5.0" /> 
          </padding>
          <VBox.margin>
             <Insets />
          </VBox.margin>
       </Label>
-      <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="393.0">
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
          <padding>
             <Insets left="5.0" />
          </padding>
          <items>
-          <Button mnemonicParsing="false" text="New" />
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="New" />
          </items>
       </ToolBar>
-      <TableView prefHeight="192.0" prefWidth="393.0">
+      <TableView fx:id="tableViewDepartament" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
         </columns>
       </TableView>
    </children>
