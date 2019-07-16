@@ -7,7 +7,7 @@
 
 <VBox prefHeight="287.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label prefHeight="79.0" prefWidth="399.0" text="About">
+      <Label prefHeight="46.0" prefWidth="399.0" text="About">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
